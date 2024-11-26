@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Meu Amor</title>
+    <meta name="robots" content="noindex,nofollow">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+            <h1>Jogo Do Amor</h1>
+
+            <p>Digite a Data de Nascimento do Seu Amor para a Surpresa</p>
+
+            <label for="txt1">Digite:</label>
+
+            <input type="text" id="txt1">
+
+            <button onclick="botao_click()">Ver a Surpresa</button>
+
+        </div>
+    </div>
+
+    <script>
+        function botao_click() {
+            // Obtém o valor do campo de texto
+            var dataDigitada = document.getElementById('txt1').value;
+
+            // Verifica se a data é "03/08/2004"
+            if (dataDigitada === '03/08/2004') {
+                alert('Eu Te Amo!!');
+            } else {
+                alert('Nossa, errou');
+            }
+        }
+    </script>
+
+</body>
+</html>
